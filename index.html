@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SilverBeam</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: #000000 ;color: #c4c4c4;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+    <main style="display: flex; flex-direction: column; justify-content: center; align-items: left;gap:50px;">
+        <header style="display: flex; flex-direction: column; align-items: center;">
+            <h1>Bem vindo ao Silver Beam!</h1>
+        </header>
+        <section style="padding:20px;display:flex;flex-direction:row;justify-content:space-around;">
+            <article>
+                <p>Para baixar um arquivo, digite o nome do arquivo desejado no campo abaixo e clique em "Baixar".</p>
+                <p>Se você não sabe quais são os arquivos disponíveis, esse site não é para você.</p> 
+                <p>Caso queira subir seus arquivos para um download rápido, recomendo o <a href="https://justbeamit.com/">JustBeamIt</a></p>
+            </article>
+            <article>
+                <p>To download a file, enter the desired file name in the field below and click "Baixar".</p>
+                <p>If you don't know which files are available, this site is not meant for you.</p> 
+                <p>If you want to upload your personal files for quick download, I recommend using <a href="https://justbeamit.com/">JustBeamIt</a></p>
+            </article>
+        </section>
+        <section style="padding:20px;display:flex;flex-direction:column;justify-content: center; align-items: center;">
+            <form>
+                <label style="cursor: text;" for="name">Arquivo:</label>
+                <input style="background-color: #c4c4c4;padding: 10px;border-radius: 15px;" size="50" type="text" name="filename" id="filename" placeholder="Nome do arquivo desejado">
+                <input style="background-color: #c4c4c4;padding: 10px 30px;border-radius: 15px;cursor: pointer" type="submit" value="Baixar">
+            </form>
+        </section>
+        <div style="display:flex;flex-direction: column; align-items: center;">
+            <footer style="position:absolute;bottom:20px;width:80%;display:flex;flex-direction: row;justify-content: space-between;">
+                <p style="text-align: left;">Conheça o <a href="thesilver.com.br">SilverHub</a></p>
+                <p style="text-align: left;">Veja esse projeto no <a href="https://github.com/silveira42/beam">Github</a></p>
+            </footer>
+        </div>
+    </main>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const filename = document.getElementById('filename').value;
+            const url = window.location.href + filename;
+            window.location.href = url;
+        });
+    </script>
+</body>
+</html>
