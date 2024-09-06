@@ -1,6 +1,7 @@
 services:
   nginx:
     image: nginx:latest
+    container_name: beam
     ports:
       - "25113:80"
     volumes:
