@@ -1,5 +1,8 @@
 # Beam
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/silveira42/beam/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/silveira42/beam/blob/main/LEIAME.md)
+
 Beam is a super simple web application that allows you to upload files to a specific folder in you host device and share them with clients via a HTTP server. You can expose this server via a personal VPN or publish it. Keep in mind, this is a very simplistic solution with **no security measures** included, so host at your own risk.
 
 ## See it live
@@ -20,6 +23,7 @@ Beam is a super simple web application that allows you to upload files to a spec
 .
 ├── index.html
 ├── README.md
+├── LEIAME.md
 ├── docker-compose.yml
 ├── nginx.conf
 └── LICENSE
