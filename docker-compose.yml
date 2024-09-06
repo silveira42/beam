@@ -7,5 +7,6 @@ services:
     volumes:
       - ${HOME}/Beam:/usr/share/nginx/html
       - ./index.html:/usr/share/nginx/html/index.html
+      - ./beam-logo-white.ico:/usr/share/nginx/html/beam-logo-white.ico
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
     restart: no
